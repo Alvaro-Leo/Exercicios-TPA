@@ -33,6 +33,7 @@
             this.tsmiLivros = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiarquibancada = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmisalario = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblCriadores = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             this.tsmiarquibancada,
             this.tsmisalario});
             this.exercíciosToolStripMenuItem.Name = "exercíciosToolStripMenuItem";
-            this.exercíciosToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.exercíciosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.exercíciosToolStripMenuItem.Text = "Exercícios";
             // 
             // tsmiLivros
@@ -77,15 +78,25 @@
             this.tsmisalario.Text = "Salário";
             this.tsmisalario.Click += new System.EventHandler(this.tsmisalario_Click);
             // 
+            // lblCriadores
+            // 
+            this.lblCriadores.AutoSize = true;
+            this.lblCriadores.Location = new System.Drawing.Point(12, 428);
+            this.lblCriadores.Name = "lblCriadores";
+            this.lblCriadores.Size = new System.Drawing.Size(341, 13);
+            this.lblCriadores.TabIndex = 1;
+            this.lblCriadores.Text = "Projeto realizado por Alvaro Andrade Santos e Leonardo Souza Novais";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblCriadores);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -100,6 +111,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiLivros;
         private System.Windows.Forms.ToolStripMenuItem tsmiarquibancada;
         private System.Windows.Forms.ToolStripMenuItem tsmisalario;
+        private System.Windows.Forms.Label lblCriadores;
     }
 }
 

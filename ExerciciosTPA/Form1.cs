@@ -37,5 +37,12 @@ namespace ExerciciosTPA
             Form4 salario = new Form4();
             salario.Show();
         }
+
+        private void tsmiRestaurante_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form5 restaurante = new Form5();
+            restaurante.Show();
+        }
     }
 }

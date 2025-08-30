@@ -34,6 +34,7 @@
             this.tsmiarquibancada = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmisalario = new System.Windows.Forms.ToolStripMenuItem();
             this.lblCriadores = new System.Windows.Forms.Label();
+            this.tsmiRestaurante = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,8 @@
             this.exercíciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiLivros,
             this.tsmiarquibancada,
-            this.tsmisalario});
+            this.tsmisalario,
+            this.tsmiRestaurante});
             this.exercíciosToolStripMenuItem.Name = "exercíciosToolStripMenuItem";
             this.exercíciosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.exercíciosToolStripMenuItem.Text = "Exercícios";
@@ -87,6 +89,13 @@
             this.lblCriadores.TabIndex = 1;
             this.lblCriadores.Text = "Projeto realizado por Alvaro Andrade Santos e Leonardo Souza Novais";
             // 
+            // tsmiRestaurante
+            // 
+            this.tsmiRestaurante.Name = "tsmiRestaurante";
+            this.tsmiRestaurante.Size = new System.Drawing.Size(180, 22);
+            this.tsmiRestaurante.Text = "Tabela Restaurante";
+            this.tsmiRestaurante.Click += new System.EventHandler(this.tsmiRestaurante_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,6 +121,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiarquibancada;
         private System.Windows.Forms.ToolStripMenuItem tsmisalario;
         private System.Windows.Forms.Label lblCriadores;
+        private System.Windows.Forms.ToolStripMenuItem tsmiRestaurante;
     }
 }
 

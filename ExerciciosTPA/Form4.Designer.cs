@@ -34,58 +34,126 @@
             this.txtidade = new System.Windows.Forms.TextBox();
             this.btncalcular = new System.Windows.Forms.Button();
             this.txtnovosal = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblSexo = new System.Windows.Forms.Label();
+            this.lblSal = new System.Windows.Forms.Label();
+            this.lblIdade = new System.Windows.Forms.Label();
+            this.lblNovoSal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(50, 35);
+            this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnome.Location = new System.Drawing.Point(512, 46);
             this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(100, 20);
+            this.txtnome.Size = new System.Drawing.Size(137, 38);
             this.txtnome.TabIndex = 0;
             // 
             // txtsexo
             // 
-            this.txtsexo.Location = new System.Drawing.Point(50, 85);
+            this.txtsexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsexo.Location = new System.Drawing.Point(512, 96);
             this.txtsexo.Name = "txtsexo";
-            this.txtsexo.Size = new System.Drawing.Size(100, 20);
+            this.txtsexo.Size = new System.Drawing.Size(137, 38);
             this.txtsexo.TabIndex = 1;
             // 
             // txtsal
             // 
-            this.txtsal.Location = new System.Drawing.Point(50, 138);
+            this.txtsal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsal.Location = new System.Drawing.Point(512, 149);
             this.txtsal.Name = "txtsal";
-            this.txtsal.Size = new System.Drawing.Size(100, 20);
+            this.txtsal.Size = new System.Drawing.Size(137, 38);
             this.txtsal.TabIndex = 2;
             // 
             // txtidade
             // 
-            this.txtidade.Location = new System.Drawing.Point(50, 188);
+            this.txtidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidade.Location = new System.Drawing.Point(512, 199);
             this.txtidade.Name = "txtidade";
-            this.txtidade.Size = new System.Drawing.Size(100, 20);
+            this.txtidade.Size = new System.Drawing.Size(137, 38);
             this.txtidade.TabIndex = 3;
             // 
             // btncalcular
             // 
-            this.btncalcular.Location = new System.Drawing.Point(399, 185);
+            this.btncalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcular.Location = new System.Drawing.Point(508, 341);
             this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(75, 23);
+            this.btncalcular.Size = new System.Drawing.Size(141, 44);
             this.btncalcular.TabIndex = 4;
-            this.btncalcular.Text = "button1";
+            this.btncalcular.Text = "Calcular";
             this.btncalcular.UseVisualStyleBackColor = true;
             this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // txtnovosal
             // 
-            this.txtnovosal.Location = new System.Drawing.Point(50, 237);
+            this.txtnovosal.Enabled = false;
+            this.txtnovosal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnovosal.Location = new System.Drawing.Point(512, 248);
             this.txtnovosal.Name = "txtnovosal";
-            this.txtnovosal.Size = new System.Drawing.Size(100, 20);
+            this.txtnovosal.Size = new System.Drawing.Size(137, 38);
             this.txtnovosal.TabIndex = 5;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(62, 49);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(362, 31);
+            this.lblNome.TabIndex = 6;
+            this.lblNome.Text = "Insira o nome do funcionário:";
+            // 
+            // lblSexo
+            // 
+            this.lblSexo.AutoSize = true;
+            this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSexo.Location = new System.Drawing.Point(62, 99);
+            this.lblSexo.Name = "lblSexo";
+            this.lblSexo.Size = new System.Drawing.Size(417, 31);
+            this.lblSexo.TabIndex = 7;
+            this.lblSexo.Text = "Insira o sexo do funcionário(F/M):";
+            this.lblSexo.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblSal
+            // 
+            this.lblSal.AutoSize = true;
+            this.lblSal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSal.Location = new System.Drawing.Point(62, 152);
+            this.lblSal.Name = "lblSal";
+            this.lblSal.Size = new System.Drawing.Size(375, 31);
+            this.lblSal.TabIndex = 8;
+            this.lblSal.Text = "Insira o salário do funcionário:";
+            // 
+            // lblIdade
+            // 
+            this.lblIdade.AutoSize = true;
+            this.lblIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdade.Location = new System.Drawing.Point(63, 202);
+            this.lblIdade.Name = "lblIdade";
+            this.lblIdade.Size = new System.Drawing.Size(361, 31);
+            this.lblIdade.TabIndex = 9;
+            this.lblIdade.Text = "Insira a idade do funcionário:";
+            // 
+            // lblNovoSal
+            // 
+            this.lblNovoSal.AutoSize = true;
+            this.lblNovoSal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNovoSal.Location = new System.Drawing.Point(63, 251);
+            this.lblNovoSal.Name = "lblNovoSal";
+            this.lblNovoSal.Size = new System.Drawing.Size(350, 31);
+            this.lblNovoSal.TabIndex = 10;
+            this.lblNovoSal.Text = "Novo salário do funcionário:";
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblNovoSal);
+            this.Controls.Add(this.lblIdade);
+            this.Controls.Add(this.lblSal);
+            this.Controls.Add(this.lblSexo);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtnovosal);
             this.Controls.Add(this.btncalcular);
             this.Controls.Add(this.txtidade);
@@ -107,5 +175,10 @@
         private System.Windows.Forms.TextBox txtidade;
         private System.Windows.Forms.Button btncalcular;
         private System.Windows.Forms.TextBox txtnovosal;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblSexo;
+        private System.Windows.Forms.Label lblSal;
+        private System.Windows.Forms.Label lblIdade;
+        private System.Windows.Forms.Label lblNovoSal;
     }
 }

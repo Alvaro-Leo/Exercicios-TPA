@@ -21,27 +21,28 @@ namespace ExerciciosTPA
         {
 
         }
-
+        double peso, altura, IMC, altura_quadrado;
+           
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double peso, altura, IMC;
             peso = Convert.ToDouble(txtPeso.Text);
             altura = Convert.ToDouble(txtAltura.Text);
-            IMC = peso * (altura * altura);
+            altura_quadrado = altura * altura;
+            IMC = peso / altura_quadrado;
 
-            if (IMC < 17.0)
+            if (IMC < 17)
                 txtIMC.Text = "Magreza severa";
-            if (IMC >= 17 && IMC < 18.5)
+            else if (IMC >= 17 && IMC < 18.5)
                 txtIMC.Text = "Magreza leve";
-            if (IMC >= 18.5 && IMC < 25.0)
+            else if (IMC >= 18.5 && IMC < 25)
                 txtIMC.Text = "Peso normal";
-            if (IMC >= 25 && IMC < 30)
+            else if (IMC >= 25 && IMC < 30)
                 txtIMC.Text = "Sobrepeso";
-            if (IMC >= 30 && IMC < 35)
+            else if (IMC >= 30 && IMC < 35)
                 txtIMC.Text = "Obesidade classe I";
-            if (IMC >= 35 && IMC < 40)
+            else if (IMC >= 35 && IMC < 40)
                 txtIMC.Text = "Obesidade classe II";
-            if (IMC >= 40)
+            else if (IMC >= 40)
                 txtIMC.Text = "Obesidade classe III";
             
         }

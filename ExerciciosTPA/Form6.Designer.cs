@@ -44,9 +44,9 @@
             this.lblAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAltura.Location = new System.Drawing.Point(119, 82);
             this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(215, 31);
+            this.lblAltura.Size = new System.Drawing.Size(360, 31);
             this.lblAltura.TabIndex = 0;
-            this.lblAltura.Text = "Insira sua altura:";
+            this.lblAltura.Text = "Insira sua altura(em metros):";
             // 
             // lblPeso
             // 

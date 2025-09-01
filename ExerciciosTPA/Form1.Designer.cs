@@ -36,13 +36,15 @@
             this.tsmiRestaurante = new System.Windows.Forms.ToolStripMenuItem();
             this.lblCriadores = new System.Windows.Forms.Label();
             this.tsmiIMC = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSair = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exercíciosToolStripMenuItem});
+            this.exercíciosToolStripMenuItem,
+            this.tsmiSair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -105,6 +107,13 @@
             this.tsmiIMC.Text = "Calculadora IMC";
             this.tsmiIMC.Click += new System.EventHandler(this.tsmiIMC_Click);
             // 
+            // tsmiSair
+            // 
+            this.tsmiSair.Name = "tsmiSair";
+            this.tsmiSair.Size = new System.Drawing.Size(38, 20);
+            this.tsmiSair.Text = "Sair";
+            this.tsmiSair.Click += new System.EventHandler(this.tsmiSair_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,6 +141,7 @@
         private System.Windows.Forms.Label lblCriadores;
         private System.Windows.Forms.ToolStripMenuItem tsmiRestaurante;
         private System.Windows.Forms.ToolStripMenuItem tsmiIMC;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSair;
     }
 }
 

@@ -51,5 +51,10 @@ namespace ExerciciosTPA
             Form6 IMC = new Form6();
             IMC.Show();
         }
+
+        private void tsmiSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

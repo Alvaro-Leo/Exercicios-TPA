@@ -33,8 +33,9 @@
             this.tsmiLivros = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiarquibancada = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmisalario = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblCriadores = new System.Windows.Forms.Label();
             this.tsmiRestaurante = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblCriadores = new System.Windows.Forms.Label();
+            this.tsmiIMC = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,8 @@
             this.tsmiLivros,
             this.tsmiarquibancada,
             this.tsmisalario,
-            this.tsmiRestaurante});
+            this.tsmiRestaurante,
+            this.tsmiIMC});
             this.exercíciosToolStripMenuItem.Name = "exercíciosToolStripMenuItem";
             this.exercíciosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.exercíciosToolStripMenuItem.Text = "Exercícios";
@@ -80,6 +82,13 @@
             this.tsmisalario.Text = "Salário";
             this.tsmisalario.Click += new System.EventHandler(this.tsmisalario_Click);
             // 
+            // tsmiRestaurante
+            // 
+            this.tsmiRestaurante.Name = "tsmiRestaurante";
+            this.tsmiRestaurante.Size = new System.Drawing.Size(180, 22);
+            this.tsmiRestaurante.Text = "Tabela Restaurante";
+            this.tsmiRestaurante.Click += new System.EventHandler(this.tsmiRestaurante_Click);
+            // 
             // lblCriadores
             // 
             this.lblCriadores.AutoSize = true;
@@ -89,12 +98,12 @@
             this.lblCriadores.TabIndex = 1;
             this.lblCriadores.Text = "Projeto realizado por Alvaro Andrade Santos e Leonardo Souza Novais";
             // 
-            // tsmiRestaurante
+            // tsmiIMC
             // 
-            this.tsmiRestaurante.Name = "tsmiRestaurante";
-            this.tsmiRestaurante.Size = new System.Drawing.Size(180, 22);
-            this.tsmiRestaurante.Text = "Tabela Restaurante";
-            this.tsmiRestaurante.Click += new System.EventHandler(this.tsmiRestaurante_Click);
+            this.tsmiIMC.Name = "tsmiIMC";
+            this.tsmiIMC.Size = new System.Drawing.Size(180, 22);
+            this.tsmiIMC.Text = "Calculadora IMC";
+            this.tsmiIMC.Click += new System.EventHandler(this.tsmiIMC_Click);
             // 
             // Form1
             // 
@@ -122,6 +131,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmisalario;
         private System.Windows.Forms.Label lblCriadores;
         private System.Windows.Forms.ToolStripMenuItem tsmiRestaurante;
+        private System.Windows.Forms.ToolStripMenuItem tsmiIMC;
     }
 }
 

@@ -44,5 +44,12 @@ namespace ExerciciosTPA
             Form5 restaurante = new Form5();
             restaurante.Show();
         }
+
+        private void tsmiIMC_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form6 IMC = new Form6();
+            IMC.Show();
+        }
     }
 }

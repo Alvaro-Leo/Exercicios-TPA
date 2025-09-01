@@ -54,5 +54,14 @@ namespace ExerciciosTPA
             Form1 menu = new Form1();
             menu.Show();
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtidade.Text = "";
+            txtnome.Text = "";
+            txtnovosal.Text = "";
+            txtsal.Text = "";
+            txtsexo.Text = "";
+        }
     }
 }

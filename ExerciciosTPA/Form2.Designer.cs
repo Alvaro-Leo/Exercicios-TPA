@@ -33,6 +33,7 @@
             this.btncalcular = new System.Windows.Forms.Button();
             this.lblQuant = new System.Windows.Forms.Label();
             this.lblpreco = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtlivros
@@ -55,7 +56,7 @@
             // btncalcular
             // 
             this.btncalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcular.Location = new System.Drawing.Point(419, 262);
+            this.btncalcular.Location = new System.Drawing.Point(438, 262);
             this.btncalcular.Name = "btncalcular";
             this.btncalcular.Size = new System.Drawing.Size(130, 41);
             this.btncalcular.TabIndex = 2;
@@ -83,11 +84,23 @@
             this.lblpreco.TabIndex = 4;
             this.lblpreco.Text = "Preço total:";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(188, 262);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(130, 41);
+            this.btnVoltar.TabIndex = 5;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.lblpreco);
             this.Controls.Add(this.lblQuant);
             this.Controls.Add(this.btncalcular);
@@ -107,5 +120,6 @@
         private System.Windows.Forms.Button btncalcular;
         private System.Windows.Forms.Label lblQuant;
         private System.Windows.Forms.Label lblpreco;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

@@ -33,6 +33,7 @@
             this.txtTOT = new System.Windows.Forms.TextBox();
             this.lblArquibancada = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtarquibancada
@@ -83,11 +84,23 @@
             this.lblTotal.TabIndex = 4;
             this.lblTotal.Text = "Arrecadação total:";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(168, 295);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(145, 43);
+            this.btnVoltar.TabIndex = 5;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblArquibancada);
             this.Controls.Add(this.txtTOT);
@@ -107,5 +120,6 @@
         private System.Windows.Forms.TextBox txtTOT;
         private System.Windows.Forms.Label lblArquibancada;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

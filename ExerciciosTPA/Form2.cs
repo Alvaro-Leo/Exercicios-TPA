@@ -27,5 +27,12 @@ namespace ExerciciosTPA
                 TOT = livros * 12;
             txtpreco.Text = TOT.ToString();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form1 menu = new Form1();
+            menu.Show();
+        }
     }
 }

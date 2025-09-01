@@ -35,6 +35,7 @@
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.txtIMC = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblAltura
@@ -104,11 +105,23 @@
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(160, 377);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(148, 42);
+            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtIMC);
             this.Controls.Add(this.txtPeso);
@@ -132,5 +145,6 @@
         private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.TextBox txtIMC;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

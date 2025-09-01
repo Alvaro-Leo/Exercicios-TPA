@@ -45,5 +45,12 @@ namespace ExerciciosTPA
                 txtIMC.Text = "Obesidade classe III";
             
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form1 menu = new Form1();
+            menu.Show();
+        }
     }
 }

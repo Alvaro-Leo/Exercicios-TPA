@@ -39,6 +39,7 @@
             this.lblSal = new System.Windows.Forms.Label();
             this.lblIdade = new System.Windows.Forms.Label();
             this.lblNovoSal = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtnome
@@ -144,11 +145,23 @@
             this.lblNovoSal.TabIndex = 10;
             this.lblNovoSal.Text = "Novo salário do funcionário:";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(296, 341);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(141, 44);
+            this.btnVoltar.TabIndex = 11;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.lblNovoSal);
             this.Controls.Add(this.lblIdade);
             this.Controls.Add(this.lblSal);
@@ -180,5 +193,6 @@
         private System.Windows.Forms.Label lblSal;
         private System.Windows.Forms.Label lblIdade;
         private System.Windows.Forms.Label lblNovoSal;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

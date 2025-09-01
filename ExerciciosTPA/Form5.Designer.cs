@@ -35,6 +35,7 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.btnVerificar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCod
@@ -77,14 +78,16 @@
             // 
             // txtNome
             // 
+            this.txtNome.Enabled = false;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(482, 146);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(130, 38);
+            this.txtNome.Size = new System.Drawing.Size(214, 38);
             this.txtNome.TabIndex = 4;
             // 
             // txtPreco
             // 
+            this.txtPreco.Enabled = false;
             this.txtPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPreco.Location = new System.Drawing.Point(482, 219);
             this.txtPreco.Name = "txtPreco";
@@ -102,11 +105,23 @@
             this.btnVerificar.UseVisualStyleBackColor = true;
             this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(197, 320);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(140, 45);
+            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnVerificar);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtNome);
@@ -130,5 +145,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Button btnVerificar;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }
